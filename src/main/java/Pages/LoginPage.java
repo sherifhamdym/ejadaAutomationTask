@@ -20,13 +20,13 @@ public class LoginPage extends Page {
 
 
     // Method to validate credentials with Valid data
-    @Step("loginWithValid: {0},{1}")
+    @Step("Valid Login with username: {0} and password: {1}")
     public boolean loginWithValid(String username, String password) {
         return login(username, password).isDisplayed(burgerMenu);
     }
 
-    @Step("loginWithInValid: {0},{1}")
     // Method to validate credentials with Invalid data
+    @Step("InValid Login with username: {0} and password: {1}")
     public String loginWithInvalid(String username, String password) {
         return login(username, password).getText(errorMessage);
     }

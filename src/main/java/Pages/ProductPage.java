@@ -1,5 +1,6 @@
 package Pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -15,7 +16,7 @@ public class ProductPage extends Page {
 
     // Number of items to add to cart initially two
     int numberOfItems = 2;
-
+    String currency="$";
     // Locators for elements on the product page
     private static final By shoppingCartBTN = By.className("shopping_cart_link");
     private static final By productItemName = By.className("inventory_item_name");
@@ -35,6 +36,7 @@ public class ProductPage extends Page {
     }
 
     // Add the two most expensive products to cart
+    @Step("Adding Most Expensive Products to cart: Number of products = {0}")
     public ProductPage addTwoMostExpensiveProductsToCart(String numberOfItemsToAdd) {
         // This is just a workaround to handle the change password popup that may appear when the page loads after login, as it always
         // appears even after configuring the browser options in the TestBase to not show it
@@ -52,7 +54,7 @@ public class ProductPage extends Page {
 
         // Extract product information (price and element)
         for (WebElement item : inventoryItems) {
-            String priceText = item.findElement(By.className("inventory_item_price")).getText().replace("$", "");
+            String priceText = item.findElement(By.className("inventory_item_price")).getText().replace(currency, "");
             double price = Double.parseDouble(priceText);
 
             // Store price and corresponding WebElement
@@ -90,7 +92,7 @@ public class ProductPage extends Page {
             WebElement addToCartButton = item.findElement(addToCartBTN);
             addToCartButton.click();
 
-            System.out.println("Added to cart: " + name + " - $" + price);
+            System.out.println("Added to cart: " + name + " - "+ currency + price);
         }
     }
 }
