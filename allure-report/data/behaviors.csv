@@ -1,0 +1,6 @@
+"BROKEN","EPIC","FAILED","FEATURE","PASSED","SKIPPED","STORY","UNKNOWN"
+"0","RestAssured SimpleBooksApiTest","0","CRUD Operations","8","0","","0"
+"0","SauceDemo","0","Login - INVALID Cases","36","0","User logs in with incorrect credentials using Class and properties file","0"
+"0","SauceDemo","0","Login - INVALID Cases","6","0","User logs in with incorrect credentials using JSON file","0"
+"0","SauceDemo","0","Login - VALID Cases","2","0","E2E scenario for adding a products to the cart and checkout","0"
+"0","SauceDemo","0","Login - INVALID Cases","6","0","User logs in with incorrect credentials using Excel file","0"

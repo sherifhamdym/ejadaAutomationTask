@@ -1,0 +1,1 @@
+{"total":2,"items":[{"uid":"b4bc108b86a3ea2aea108231dc9f5337","name":"SauceDemo","statistic":{"failed":0,"broken":0,"skipped":0,"passed":2,"unknown":0,"total":2}},{"uid":"926bb3606890f829e08a8f1521e2d70d","name":"RestAssured SimpleBooksApiTest","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}}]}

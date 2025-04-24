@@ -1,0 +1,1 @@
+{"uuid":"b8b5d1c3-0fba-4f03-9202-fd4a648d470a","name":"tasks.UiTask.TestBase.setUp","children":["56a1772a-ae36-4e56-88a6-ae238e804c35"],"description":"","befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1745491476546,"stop":1745491477342}],"afters":[],"start":1745491476546,"stop":1745491477342}
